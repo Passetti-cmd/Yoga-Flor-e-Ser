@@ -1,0 +1,53 @@
+🚀 Nome do Projeto: yoga html
+
+📅 Data de Criação: 14/08/2025  
+📌 Finalidade: (Explique rapidamente o que esse projeto faz)  
+
+---
+
+📌 DESCRIÇÃO GERAL
+- (Explicação rápida do que o projeto faz)
+- Objetivo: (O que ele resolve?)
+- Status: (Em andamento, finalizado, precisa de melhorias?)  
+
+---
+
+🛠 TECNOLOGIAS UTILIZADAS
+✅ Power BI  
+✅ Excel  
+✅ Python (se houver scripts)  
+✅ Outras ferramentas: (Adicione aqui)  
+
+---
+
+📁 ESTRUTURA DO PROJETO
+📂 templates/ → Arquivos HTML dinâmicos  
+📂 backend/ → Código backend (APIs, lógica do sistema)  
+📂 banco_de_dados/ → Banco de dados e scripts SQL  
+📂 static/css/ → Arquivos de estilo  
+📂 static/js/ → Arquivos JavaScript  
+📂 static/img/ → Imagens e ícones  
+📂 documentação/ → Documentos técnicos e guias  
+📂 versões_antigas/ → Arquivos antigos para referência  
+📂 testes/ → Testes do sistema  
+
+---
+
+🔥 PRINCIPAIS FUNCIONALIDADES
+✅ (Liste as principais funcionalidades do projeto)  
+✅ (O que ele automatiza ou resolve?)  
+✅ (Se houver integração, liste aqui)  
+
+---
+
+🔄 O QUE AINDA PRECISA MELHORAR?
+🔹 (O que falta implementar ou corrigir?)  
+🔹 (Coisas que podem ser otimizadas no código?)  
+🔹 (Se precisar de ajustes futuros, anote aqui)  
+
+---
+
+📍 NOTAS PESSOAIS
+📌 (Escreva coisas importantes para lembrar futuramente)  
+📌 (Detalhes técnicos que podem ser úteis depois)  
+📌 (Outras observações que te ajudem a retomar o projeto)  
