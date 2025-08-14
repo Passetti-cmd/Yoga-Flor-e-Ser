@@ -32,10 +32,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Header com scroll
 window.addEventListener("scroll", () => {
   const header = document.querySelector(".header");
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+
   if (window.scrollY > 100) {
-    if (currentTheme === 'dark') {
+    if (currentTheme === "dark") {
       header.style.background = "rgba(26, 26, 26, 0.95)";
     } else {
       header.style.background = "rgba(255, 255, 255, 0.95)";
@@ -156,11 +156,11 @@ statNumbers.forEach((stat) => {
   statObserver.observe(stat);
 });
 
-// Efeito parallax suave no hero
+// Efeito parallax suave no hero (apenas em desktop)
 window.addEventListener("scroll", () => {
   const scrolled = window.pageYOffset;
   const heroImage = document.querySelector(".hero-placeholder");
-  if (heroImage) {
+  if (heroImage && window.innerWidth > 768) {
     const rate = scrolled * -0.5;
     heroImage.style.transform = `translateY(${rate}px)`;
   }
@@ -290,23 +290,23 @@ formInputs.forEach((input) => {
 });
 
 // Dark Mode Toggle
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById("theme-toggle");
 const html = document.documentElement;
 
 // Verificar se há tema salvo no localStorage
-const savedTheme = localStorage.getItem('theme');
+const savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
-  html.setAttribute('data-theme', savedTheme);
+  html.setAttribute("data-theme", savedTheme);
 }
 
 // Função para alternar tema
 function toggleTheme() {
-  const currentTheme = html.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  
-  html.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-  
+  const currentTheme = html.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+  html.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+
   // Resetar header para aplicar nova cor
   const header = document.querySelector(".header");
   header.style.background = "var(--header-bg)";
@@ -314,6 +314,6 @@ function toggleTheme() {
 }
 
 // Event listener para o botão
-themeToggle.addEventListener('click', toggleTheme);
+themeToggle.addEventListener("click", toggleTheme);
 
 console.log("Yoga Studio - Site carregado com sucesso! 🧘‍♀️");
