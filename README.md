@@ -118,10 +118,6 @@ O site é totalmente responsivo e se adapta a:
 
 ## 📋 Checklist de Personalização
 
-- [ ] Alterar nome da empresa
-- [ ] Atualizar informações de contato
-- [ ] Modificar horários das aulas
-- [ ] Adicionar/remover modalidades de yoga
 - [ ] Incluir fotos reais da empresa
 - [ ] Configurar redes sociais
 - [ ] Personalizar cores (se necessário)
@@ -164,3 +160,4 @@ Este projeto foi desenvolvido especificamente para a empresa de yoga. Todos os d
 ---
 
 **Desenvolvido com ❤️ para transformar vidas através do yoga**
+
