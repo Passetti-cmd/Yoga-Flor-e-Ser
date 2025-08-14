@@ -483,6 +483,72 @@ body {
   background: var(--bg-primary);
 }
 
+/* Pricing Section */
+.pricing-section {
+  margin-bottom: 4rem;
+}
+
+.pricing-section h3 {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border-top: 4px solid var(--primary-color);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card h4 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.pricing-card .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card .frequency {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.pricing-info {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.pricing-info p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 .schedule-table {
   background: var(--card-bg);
   border-radius: 15px;
@@ -490,6 +556,15 @@ body {
   box-shadow: var(--shadow);
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.schedule-table h3 {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .schedule-header {
@@ -787,6 +862,19 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
+
+  .pricing-card .price {
+    font-size: 1.5rem;
+  }
+
   .schedule-header,
   .schedule-row {
     grid-template-columns: 80px repeat(6, 1fr);
@@ -795,6 +883,18 @@ body {
   .schedule-cell {
     padding: 0.5rem;
     font-size: 0.8rem;
+  }
+
+  /* Melhorar visualização da tabela no mobile */
+  .schedule-table {
+    overflow-x: auto;
+    margin: 0 -15px;
+    padding: 0 15px;
+  }
+
+  .schedule-table .schedule-header,
+  .schedule-table .schedule-row {
+    min-width: 600px;
   }
 
   .contact-content {
@@ -838,6 +938,16 @@ body {
     padding: 0.3rem;
     font-size: 0.7rem;
     min-height: 40px;
+  }
+
+  /* Ajustes específicos para telas muito pequenas */
+  .schedule-table {
+    border-radius: 10px;
+  }
+
+  .schedule-table h3 {
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
 
   .class-card {
